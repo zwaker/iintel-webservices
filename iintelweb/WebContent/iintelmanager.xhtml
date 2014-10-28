@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+    <h:head><title>JSF 2.0  World</title>
+    </h:head>
+    <h:body>
+    	<h3>JSF 2.0 Hello World Example - hello.xhtml</h3>
+    	<h:form>
+    	<h:inputText value="#{intelManagerController.iintelRecordsId}"></h:inputText>
+    		<h:commandButton action="#{intelManagerController.saveIintelProcessAll}" value="Submit"></h:commandButton>
+    		Phrase
+    		<br/>
+    		Who<h:inputText value="#{intelManagerController.phrase.who}" size="100"></h:inputText><br/>
+    		Time when<h:inputText value="#{intelManagerController.phrase.timeWhen}" size="100"></h:inputText><br/>
+    		Details:<h:inputTextarea value="#{intelManagerController.phrase.details}" cols="100" rows="20"></h:inputTextarea><br/>
+    		Source<h:inputText value="#{intelManagerController.phrase.source}"></h:inputText><br/>
+    		<br/>
+    		
+    		Joke Section
+    		<br/>
+    		Details:<h:inputTextarea value="#{intelManagerController.joke.details}" cols="100" rows="20"></h:inputTextarea><br/>
+    		Source<h:inputText value="#{intelManagerController.joke.source}"></h:inputText><br/>
+    	   
+    	   <br/>
+    	   Word Section
+    	   <br/>
+    		Word Itself<h:inputText value="#{intelManagerController.word.wordItself}" size="100"></h:inputText><br/>
+    		Details:<h:inputTextarea value="#{intelManagerController.word.definitionDetails}" cols="100" rows="20"></h:inputTextarea><br/>
+    		Source<h:inputText value="#{intelManagerController.word.source}"></h:inputText><br/>
+    	   
+    	   
+    	   <br/>
+    	   Recipe Section
+    	   <br/>
+    		name<h:inputText value="#{intelManagerController.recipe.name}" size="100"></h:inputText><br/>
+    		Creator:<h:inputText value="#{intelManagerController.recipe.creatorTrainer}" cols="100" rows="20"></h:inputText><br/>
+    		Definition Details1<h:inputTextarea value="#{intelManagerController.recipe.definitionDetails1}" cols="100" rows="20"></h:inputTextarea><br/>
+    		Definition Details2<h:inputTextarea value="#{intelManagerController.recipe.definitionDetails2}" cols="100" rows="20"></h:inputTextarea><br/>
+    		Definition Details3<h:inputTextarea value="#{intelManagerController.recipe.definitionDetails3}" cols="100" rows="20"></h:inputTextarea><br/>
+    		Image id:<h:inputText value="#{intelManagerController.recipe.imageId}" cols="100" rows="20"></h:inputText><br/>
+    		Source:<h:inputText value="#{intelManagerController.recipe.source}" cols="100" rows="20"></h:inputText><br/>
+    	   
+    	     <br/>
+    	   VideoTube Section
+    	   <br/>
+    		name<h:inputText value="#{intelManagerController.videoTube.name}" size="100"></h:inputText><br/>
+    		
+    		Definition Details1<h:inputTextarea value="#{intelManagerController.videoTube.definitionDetails1}" cols="100" rows="20"></h:inputTextarea><br/>
+       		Source URL:<h:inputText value="#{intelManagerController.videoTube.sourceUrl}" cols="100" rows="20"></h:inputText><br/>
+    		Source:<h:inputText value="#{intelManagerController.videoTube.source}" cols="100" rows="20"></h:inputText><br/>
+    	   
+    	     <br/>
+    	   PhotoStand Section
+    	   <br/>
+    		name<h:inputText value="#{intelManagerController.photoStand.name}" size="100"></h:inputText><br/>
+    		
+    		Definition Details1<h:inputTextarea value="#{intelManagerController.photoStand.definitionDetails1}" cols="100" rows="20"></h:inputTextarea><br/>
+       		Source URL:<h:inputText value="#{intelManagerController.photoStand.sourceUrl}" cols="100" rows="20"></h:inputText><br/>
+    		Source:<h:inputText value="#{intelManagerController.photoStand.source}" cols="100" rows="20"></h:inputText><br/>
+    		
+    		   <br/>
+    	   IINtel News Section
+    	   <br/>
+    		Heading<h:inputText value="#{intelManagerController.iintelNews.heading}" size="100"></h:inputText><br/>
+    		
+    		Definition Details1<h:inputTextarea value="#{intelManagerController.iintelNews.definitionDetails}" cols="100" rows="20"></h:inputTextarea><br/>
+       		Source URL:<h:inputText value="#{intelManagerController.iintelNews.sourceUrl}" cols="100" rows="20"></h:inputText><br/>
+    		Source:<h:inputText value="#{intelManagerController.iintelNews.source}" cols="100" rows="20"></h:inputText><br/>
+    	</h:form>
+    </h:body>
+</html>
